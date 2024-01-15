@@ -35,3 +35,25 @@ Personal repository for studying and solving machine learning labs and books.
 ## Book 2 - Understanding Deep Learning
 
 - Reading and solving exercises from [Understanding Deep learning](https://udlbook.github.io/udlbook/)
+
+1. 0x01-Introduction
+2. 0x02-Supervised-Learning
+3. 0x03-Shallow-Neural-Networks
+4. 0x04-Deep-Neural-Networks
+5. 0x05-Loss-Functions
+6. 0x06-Fitting-Models
+7. 0x07-Gradienst-And-initialization
+8. 0x08-Measuring-Performance
+9. 0x09-Regularization
+10. 0x0A-Convolutional-Neural-Networks
+11. 0x0B-Residual-Networks
+12. 0x0C-Transformers
+13. 0x0D-Graph-Neural-Networks
+14. 0x0E-Unsupervised-Learning
+15. 0x0F-Generative-Adversarial-Networks
+16. 0x10-Normalizing-Flows
+17. 0x11-Variational-Autoencoders
+18. 0x12-Diffusion-Models
+19. 0x13-Reinforcement-Learning
+20. 0x14-Why-Does-Deep-Learning-Works
+21. 0x15-Ethics
