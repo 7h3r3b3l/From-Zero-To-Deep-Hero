@@ -1,0 +1,9 @@
+# Ignore all kind of dataser
+*.db
+*.json
+*.csv
+# Ignore all python compilation files
+*.pyc
+*.pyo
+# Ignore compressed files
+*.zip
