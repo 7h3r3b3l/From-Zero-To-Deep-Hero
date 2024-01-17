@@ -1,5 +1,5 @@
 # Machine Learning - From Zero to Deep Hero.
-Personal repository for studying and solving machine learning opensource labs and books.
+Personal repository for autodidact learning and solving machine learning opensource labs and books. The goal of this project is to become good in deep learning development.
 
 ## Book 1 -  Dive 2 Deep Learning
 - Making the exercises listed in [d2l.ai](https://d2l.ai/)
