@@ -28,7 +28,7 @@ import torch
 import matplotlib.pyplot as plt
 import numpy as np
 
-## A Simple function
+## A Simple function back propagation
 
 x = torch.arange(10.0)
 x.requires_grad_(True)
