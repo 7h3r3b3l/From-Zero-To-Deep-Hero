@@ -23,3 +23,20 @@
 Secction 2.3 - Calculus
 d2l.ai
 """
+import torch
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+## Derivatives and Differentiation
+
+def f(x):
+    return x**2 
+
+for i in range(-5,6):
+    h = 0.000000000001
+    val = f(i)
+    derivate = (f(i+h) - f(i))/h
+    print(f"|point:{i}|value:{val}|derivate:{derivate}")
+
+# Blah Blah Blah ... Already know calculus.
