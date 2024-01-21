@@ -23,3 +23,10 @@
 Secction 3.1 - Linear Regression
 d2l.ai
 """
+
+import math
+import time
+import numpy as np
+import torch
+from d2l import torch as d2l
+import matplotlib.pyplot as plt
