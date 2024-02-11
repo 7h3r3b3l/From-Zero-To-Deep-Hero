@@ -28,8 +28,23 @@ Personal repository for autodidact learning and solving machine learning opensou
 20. 0x14-Generative-Adversarial-Networks
 21. 0x15-Recommender-Systems
 
+## Course 2 - LightningAI -  Deep Learning Fundamentals
 
-## Book 2 - Understanding Deep Learning
+- Doing all the exercises listed in [Deep Learning Fundamentals](https://lightning.ai/courses/deep-learning-fundamentals/)
+
+1. 0x01-Intro_to_ML_and_DL
+2. 0x02-Using_Tensors
+3. 0x03-Model_Training
+4. 0x04-Training_Multilayer_Neural_networks
+5. 0x05-Organizing_Code_with_lightning
+6. 0x06-Essential_DeepLearning_Tips
+7. 0x07-Getting_Started_with_CV
+8. 0x08-NLP-LLMs
+9. 0x09-SpeedingUp
+10. 0x0A-The-Finale
+
+
+## Book 3 - Understanding Deep Learning
 
 - Reading and solving exercises from [Understanding Deep learning](https://udlbook.github.io/udlbook/)
 
