@@ -65,14 +65,34 @@ class Trainer:
             for x, y in zip(self.x_train, self.y_train):
                 error = self.module.update(x, y)
                 total_error += abs(error)
-            print(total_error)
-            if total_error == 0:
-                print("is perfect")
+            print(f"finished epoch {epoch} with {total_error} error")
+            if total_error == 0: # early stopping if the model is perfect.
                 return self.module.weights
+
+def compute_accuracy(model, datamodule):
+    """
+    Method for computing the accuracy of a model with a datamodule for
+    this specific example
+    """
+    all_x = datamodule.data[["x1","x2"]].values
+    all_y = datamodule.data["label"].values
+    total = 0
+    for x,y in zip(all_x, all_y):
+        res = model.forward(x)
+        if(res  == y ):
+            total += 1
+    result = total/len(all_x) 
+    return result
 
 
 if __name__ == "__main__":
+    # Load the model, the datamodule and the training module
     d = PerceptronData()
     m = PerceptronFromScratch(d)
     t = Trainer(m, d)
-t.fit()
+    # Train the model with the training module
+    acc_beginning = compute_accuracy(m,d)
+    t.fit()
+    acc_end = compute_accuracy(m,d)
+    print(f"at the beginning before training, accuracy was {acc_beginning}")
+    print(f"at the end after training, accuracy is {acc_end}")
