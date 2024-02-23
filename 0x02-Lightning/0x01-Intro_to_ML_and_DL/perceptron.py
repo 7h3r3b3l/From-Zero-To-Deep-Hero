@@ -28,17 +28,18 @@ class PerceptronFromScratch:
     """
     Module for perceptron
     """
-    def __init__(self, datamodule):
+    def __init__(self, datamodule, lr = 0.1):
         self.datamodule = datamodule
         self.num_features = len(datamodule.data.columns) - 1
         self.data = datamodule.data
         self.weights = [random.uniform(0,1) for i in range(self.num_features)]
         self.bias = 0
+        self.lr = lr
 
     def forward(self, x):
         z = self.bias
         for i, _ in enumerate(self.weights):
-            z += self.weights[i] * x[i]
+            z += self.weights[i] * x[i] 
         if z > 0:
             return 1
         else:
@@ -49,7 +50,7 @@ class PerceptronFromScratch:
         error = y_pred - pred
         self.bias += error
         for i, _ in enumerate(self.weights):
-            self.weights[i] += error * x[i]
+            self.weights[i] += error * x[i] * self.lr
         return error
 
 
